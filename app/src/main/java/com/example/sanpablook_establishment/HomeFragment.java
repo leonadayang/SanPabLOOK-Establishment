@@ -50,11 +50,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 goToRegistrationCompleteActivity(view);
+                goToRegistrationCompleteActivity(view);
+                Toast.makeText(getContext(), "Successful Booking", Toast.LENGTH_SHORT).show();
             }
 
             private void goToRegistrationCompleteActivity(View view) {
-                Intent intent = new Intent(getActivity(), RegistrationCompleteActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getActivity(), RegistrationCompleteActivity.class);
+//                startActivity(intent);
             }
         });
 

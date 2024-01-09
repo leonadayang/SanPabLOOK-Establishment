@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class RegistrationProcessActivity extends AppCompatActivity {
 
     TextView btnBackLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +20,12 @@ public class RegistrationProcessActivity extends AppCompatActivity {
         btnBackLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(RegistrationProcessActivity.this, [*Trisha Page 2*].class);
-//                startActivity(intent);
+                Intent intent = new Intent(RegistrationProcessActivity.this, RegistrationCompleteActivity.class);
+                startActivity(intent);
             }
         });
+
+
 
     }
 }

@@ -20,7 +20,7 @@ public class RegistrationCompleteActivity extends AppCompatActivity {
         btnCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegistrationCompleteActivity.this, BottomNavBarActivity.class);
+                Intent intent = new Intent(RegistrationCompleteActivity.this, RegistrationCreateAccountActivity.class);
                 startActivity(intent);
             }
         });

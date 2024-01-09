@@ -471,9 +471,9 @@
         <!--CUSTOMER NAME-->
         <TextView
             android:id="@+id/txtPendingBookingCustomerName"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_light"
             android:text="@string/customerName"
@@ -486,11 +486,11 @@
         <!--DATE-->
         <TextView
             android:id="@+id/txtDate"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="50dp"
             android:fontFamily="@font/poppins_light"
             android:text="@string/date"
             android:textAlignment="textEnd"

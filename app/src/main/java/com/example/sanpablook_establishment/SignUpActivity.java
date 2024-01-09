@@ -37,8 +37,8 @@ public class SignUpActivity extends AppCompatActivity {
         verifyAcc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Intent intent = new Intent(SignUpActivity.this, EmailConfirmationSent.class);
-                    startActivity(intent);
+                    Intent VerfifyAccintent = new Intent(SignUpActivity.this, EmailConfirmationSent.class);
+                    startActivity(VerfifyAccintent);
             }
         });
 

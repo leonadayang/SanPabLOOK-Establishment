@@ -12,35 +12,21 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/appName"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SanPabLOOKEstablishment"
         tools:targetApi="31">
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ConfirmRegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileSettingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegistrationCompleteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".EmailConfirmationSent"
-            android:exported="false" />
-        <activity
-            android:name=".SignInActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="true" />
-        <activity
-            android:name=".BottomNavBarActivity"
-            android:exported="true">
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".RegistrationProcessActivity"  />
+        <activity android:name=".ConfirmRegistrationActivity" />
+        <activity android:name=".ProfileSettingsActivity" />
+        <activity android:name=".RegistrationCompleteActivity" />
+        <activity android:name=".RegistrationCreateAccountActivity"/>
+        <activity android:name=".EmailConfirmationSent" />
+        <activity android:name=".SignInActivity" android:exported="true" />
+        <activity android:name=".SignUpActivity" android:exported="true" />
+        <activity android:name=".BottomNavBarActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

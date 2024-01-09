@@ -43,8 +43,8 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
         btnConfirmAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.activityCreateAccount, new HomeFragment()).commit();
+                Intent intent = new Intent(RegistrationCreateAccountActivity.this, BottomNavBarActivity.class);
+                startActivity(intent);
             }
         });
 
