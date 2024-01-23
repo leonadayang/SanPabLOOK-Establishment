@@ -1,17 +1,19 @@
 
 {
-java:S2293n"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù½Çúùÿÿÿÿ8ãæ³¬Ò1
+java:S2293t"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù½Çúùÿÿÿÿ8ıâ•ŠÓ1
+
+java:S1192Q"]Define a constant instead of duplicating this literal "Please fill out this field." 10 times.(šçªŠúÿÿÿÿ8şâ•ŠÓ1
 E
-java:S16044"(Make this anonymous inner class a lambda(ÖÏèê8äæ³¬Ò1
+java:S16049"(Make this anonymous inner class a lambda(ÖÏèê8¸İÛˆÓ1
 D
-java:S1604="(Make this anonymous inner class a lambda(Åÿ8äæ³¬Ò1
+java:S1604B"(Make this anonymous inner class a lambda(Åÿ8¸İÛˆÓ1
 E
-java:S1604p"(Make this anonymous inner class a lambda(óÙ­8äæ³¬Ò1
+java:S1604v"(Make this anonymous inner class a lambda(óÙ­8ÿâ•ŠÓ1
 u
-java:S1659("SDeclare "editTextBusinessPermit" and all following declarations on a separate line.(¬Ä×úüÿÿÿÿ8½ç³¬Ò1
-N
-java:S1602a",Remove useless curly braces around statement(ÕÊ¾øÿÿÿÿ8»¹µ¬Ò1
+java:S1659+"SDeclare "editTextBusinessPermit" and all following declarations on a separate line.(¬Ä×úüÿÿÿÿ8¦úÊˆÓ1
+j
+java:S1117F"HRename "autoCompleteTextView" which hides the field declared at line 39.(¿ø”€ùÿÿÿÿ8™‹•ŠÓ1
 U
-java:S1117s"8Rename "item" which hides the field declared at line 35.( ı…8Úç³¬Ò1
+java:S1117y"8Rename "item" which hides the field declared at line 38.( ı…8Ùã•ŠÓ1
 ;
-java:S2119Â"Save and re-use this "Random".(¼İÅf8íç³¬Ò1
+java:S2119Ş"Save and re-use this "Random".(¼İÅf8ãã•ŠÓ1

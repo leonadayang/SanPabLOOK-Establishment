@@ -1,18 +1,0 @@
-
-r	java:S117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûª÷Øøÿÿÿÿ8èéÅ«Ò1
-E
-java:S1604>"(Make this anonymous inner class a lambda(ã‘Àò8ééÅ«Ò1
-J
-java:S1604H"(Make this anonymous inner class a lambda(È÷úøÿÿÿÿ8ééÅ«Ò1
-J
-java:S1604]"(Make this anonymous inner class a lambda(À³Èùûÿÿÿÿ8êéÅ«Ò1
-g
-java:S16590"JDeclare "enterLastName" and all following declarations on a separate line.(Ùşâ¥8ÂêÅ«Ò1
-x
-java:S1172g"\Remove these unused method parameters "enterFirstName", "enterLastName", "enterPhoneNumber".(±ŠÃ8íÍÒ«Ò1
-I
-java:S1602y",Remove useless curly braces around statement(§ÀÇ8á÷Ò«Ò1
-N
-java:S1602|",Remove useless curly braces around statement(ÕÊ¾øÿÿÿÿ8â÷Ò«Ò1
-;
-java:S2119’"Save and re-use this "Random".(¼İÅf8ë÷Ò«Ò1

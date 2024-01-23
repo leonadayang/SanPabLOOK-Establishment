@@ -1,6 +1,4 @@
 
-l
-<app/src/main/java/com/example/sanpablook/SignUpActivity.java,4\6\46d6ef02002116d79991dcbb00f800b5e744c63a
 
 Oapp/src/main/java/com/example/sanpablook/RegistrationCreateAccountActivity.java,5\b\5b6c19f93773ea360e390fec5bee76118f219c6e
 t
@@ -33,3 +31,13 @@ m
 =app/src/main/java/com/example/sanpablook/ReportsFragment.java,0\1\01cba41370aa6832821d5b73c42a48234c8ea226
 r
 Bapp/src/main/java/com/example/sanpablook/BottomNavBarActivity.java,2\c\2c0f080db27e3599d89dc8b8e3a41d00aba5c68c
+z
+Japp/src/main/java/com/example/sanpablook/RegistrationCompleteActivity.java,e\f\ef77ea884a5b1449d19fb7821137c4d6c0b4d9f2
+y
+Iapp/src/main/java/com/example/sanpablook/RegistrationProcessActivity.java,9\b\9bc7e3a14b13a51b978772e5a4eb767184130225
+m
+=app/src/main/java/com/example/sanpablook/ProfileFragment.java,c\1\c1d816502e65a8a32e8930dc82315b889fd57299
+s
+Capp/src/main/java/com/example/sanpablook/EmailConfirmationSent.java,e\6\e686b42bfe65cfb8d2baed43b37ef670a5b16825
+y
+Iapp/src/main/java/com/example/sanpablook/ConfirmRegistrationActivity.java,a\f\af3247152127507c5171553e8c77ed3b4c243d60

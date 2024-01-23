@@ -1,13 +1,11 @@
 
-]
-java:S1854"@Remove this useless assignment to local variable "sendEmailBtn".(éìÊô8¤¼Ö°Ò1
+J
+java:S1604"(Make this anonymous inner class a lambda(¾ûÌùÿÿÿÿ8‡„Õ‡Ó1
 [
-java:S1854">Remove this useless assignment to local variable "emailField".(‰ØùÓ8¤¼Ö°Ò1
+java:S1854">Remove this useless assignment to local variable "emailField".(‰ØùÓ8ÉšÒ‡Ó1
 [
-java:S1117">Rename "emailField" which hides the field declared at line 16.(‰ØùÓ8­¼Ö°Ò1
+java:S1117">Rename "emailField" which hides the field declared at line 18.(‰ØùÓ8ÊšÒ‡Ó1
 L
-java:S1481"/Remove this unused "emailField" local variable.(‰ØùÓ8±¼Ö°Ò1
+java:S1481"/Remove this unused "emailField" local variable.(‰ØùÓ8ËšÒ‡Ó1
 ]
-java:S1117"@Rename "sendEmailBtn" which hides the field declared at line 14.(éìÊô8±¼Ö°Ò1
-N
-java:S1481"1Remove this unused "sendEmailBtn" local variable.(éìÊô8±¼Ö°Ò1
+java:S1117"@Rename "sendEmailBtn" which hides the field declared at line 16.(éìÊô8ËšÒ‡Ó1

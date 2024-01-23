@@ -1,17 +1,7 @@
 
-w
-java:S11926"ZDefine a constant instead of duplicating this literal "Error getting documents: " 4 times.(úæÅÙ8·“ôãÒ1
-q
-java:S1192+"ODefine a constant instead of duplicating this literal "BookingPending" 4 times.(œÑşçÿÿÿÿÿ8·“ôãÒ1
-f
-java:S1192,"IDefine a constant instead of duplicating this literal "casaDine" 4 times.(à˜¼8·“ôãÒ1
-i
-java:S1192?"GDefine a constant instead of duplicating this literal "status" 3 times.(Ù­ÙÓüÿÿÿÿ8Ú¦öãÒ1
 m
-java:S1192,"PDefine a constant instead of duplicating this literal "establishmentID" 4 times.(à˜¼8¸“ôãÒ1
+java:S11925"PDefine a constant instead of duplicating this literal "establishmentID" 3 times.(´ÊÁÛ8ÎÃ¬Ó1
 s
-java:S1659"QDeclare "valuePendingBookings" and all following declarations on a separate line.(÷Üÿ£şÿÿÿÿ8Ì™åãÒ1
-E
-java:S1185"(Remove this method to simply inherit it.(ßìê¯8â¡•ãÒ1
-t
-java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ËÄ•åûÿÿÿÿ8î“ôãÒ1
+java:S1659"QDeclare "valuePendingBookings" and all following declarations on a separate line.(÷Üÿ£şÿÿÿÿ8ùÃ¬Ó1
+H
+java:S1172U"+Remove this unused method parameter "view".(®ú…ò8—Ä¬Ó1
