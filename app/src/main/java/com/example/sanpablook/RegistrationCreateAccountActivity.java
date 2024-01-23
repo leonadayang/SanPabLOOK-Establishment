@@ -19,12 +19,15 @@ import android.widget.Toast;
 
 import com.example.sanpablook_establishment.R;
 import com.example.sanpablook_establishment.databinding.ActivityBottomNavBarBinding;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -46,6 +49,8 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        TextInputLayout textInputLayoutTypeOfBusiness = findViewById(R.id.editTextTypeOfBusiness);
+        editTextTypeOfBusiness = textInputLayoutTypeOfBusiness.getEditText();
 
         //BACK BUTTON
         btnReturn = findViewById(R.id.btnReturn);
@@ -61,48 +66,49 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
         btnConfirmAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Retrieve the email and password
-                String email = getIntent().getStringExtra("email");
-                String password = getIntent().getStringExtra("password");
+                // Get the AutoCompleteTextView from the TextInputLayout
+                AutoCompleteTextView autoCompleteTextView = findViewById(R.id.dropdownBizType);
+                String selectedItem = autoCompleteTextView.getText().toString();
+                editTextTypeOfBusiness.setText(selectedItem);
 
-                // Sign in the user
-                mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(task -> {
-                            if (task.isSuccessful()) {
-                                // Retrieve the user's input from the form fields
-                                String businessName = ((EditText) findViewById(R.id.editTextBusinessName)).getText().toString();
-                                String businessPermit = ((EditText) findViewById(R.id.editTextBusinessPermit)).getText().toString();
-                                String businessEmail = ((EditText) findViewById(R.id.editTextBusinessEmail)).getText().toString();
-                                String businessType = ((AutoCompleteTextView) findViewById(R.id.dropdownBizType)).getText().toString();
-                                String businessAddress = ((EditText) findViewById(R.id.editTextBusinessAddress)).getText().toString();
+                editTextBusinessName = findViewById(R.id.editTextBusinessName);
+                editTextBusinessPermit = findViewById(R.id.editTextBusinessPermit);
+                editTextBusinessEmail = findViewById(R.id.editTextBusinessEmail);
+                editTextBusinessAddress = findViewById(R.id.editTextBusinessAddress);
 
-                                // Create a map to hold the new user information
-                                Map<String, Object> user = new HashMap<>();
-                                user.put("businessName", businessName);
-                                user.put("businessPermit", businessPermit);
-                                user.put("businessEmail", businessEmail);
-                                user.put("businessType", businessType);
-                                user.put("businessAddress", businessAddress);
+                // Check if the EditText fields are not empty
+                if (TextUtils.isEmpty(editTextBusinessName.getText().toString().trim())) {
+                    editTextBusinessName.setError("Please fill out this field.");
+                    editTextBusinessName.requestFocus();
+                    return;
+                }
 
-                                // Update the user's document in Firestore
-                                FirebaseUser currentUser = mAuth.getCurrentUser();
-                                if (currentUser != null) {
-                                    fStore.collection("users").document(currentUser.getUid())
-                                            .set(user, SetOptions.merge())
-                                            .addOnSuccessListener(aVoid -> {
-                                                Toast.makeText(RegistrationCreateAccountActivity.this, "Account Created", Toast.LENGTH_SHORT).show();
-                                                Intent intent = new Intent(RegistrationCreateAccountActivity.this, BottomNavBarActivity.class);
-                                                startActivity(intent);
-                                            })
-                                            .addOnFailureListener(e -> {
-                                                Toast.makeText(RegistrationCreateAccountActivity.this, "Please fill out the missing fields", Toast.LENGTH_SHORT).show();
-                                            });
-                                }
-                            } else {
-                                Exception exception = task.getException();
-                                Toast.makeText(RegistrationCreateAccountActivity.this, "Sign in failed: " + exception.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                if (TextUtils.isEmpty(editTextBusinessPermit.getText().toString().trim())) {
+                    editTextBusinessPermit.setError("Please fill out this field.");
+                    editTextBusinessPermit.requestFocus();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(editTextBusinessEmail.getText().toString().trim())) {
+                    editTextBusinessEmail.setError("Please fill out this field.");
+                    editTextBusinessEmail.requestFocus();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(editTextTypeOfBusiness.getText().toString().trim())) {
+                    editTextTypeOfBusiness.setError("Please fill out this field.");
+                    editTextTypeOfBusiness.requestFocus();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(editTextBusinessAddress.getText().toString().trim())) {
+                    editTextBusinessAddress.setError("Please fill out this field.");
+                    editTextBusinessAddress.requestFocus();
+                    return;
+                }
+
+                //Call registerEstabUser
+                registerEstabUser(editTextBusinessName, editTextBusinessPermit, editTextBusinessEmail, editTextTypeOfBusiness, editTextBusinessAddress);
             }
         });
 
@@ -118,28 +124,6 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
         });
     }
 
-    public boolean registerUserIfEmailVerified() {
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
-        if (user != null) {
-            if (user.isEmailVerified()) {
-                // Delete the existing user
-                user.delete().addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        // Call your register function here
-                        registerEstabUser(editTextBusinessName, editTextBusinessPermit, editTextBusinessEmail, editTextTypeOfBusiness, editTextBusinessAddress);
-                    } else {
-                        Toast.makeText(RegistrationCreateAccountActivity.this, "Failed to delete existing user.", Toast.LENGTH_SHORT).show();
-                    }
-                });
-                return true;
-            } else {
-                Toast.makeText(RegistrationCreateAccountActivity.this, "Please verify your email before registering.", Toast.LENGTH_SHORT).show();
-            }
-        }
-        return false;
-    }
-
     private void registerEstabUser(EditText editTextBusinessName, EditText editTextBusinessPermit, EditText editTextBusinessEmail, EditText editTextTypeOfBusiness, EditText editTextBusinessAddress) {
         //EditText fields
         String businessName = editTextBusinessName.getText().toString().trim();
@@ -148,9 +132,51 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
         String businessType = editTextTypeOfBusiness.getText().toString().trim();
         String businessAddress = editTextBusinessAddress.getText().toString().trim();
 
+        // Map of valid business permits and corresponding establishment IDs
+        Map<String, String> permitToEstablishmentId = new HashMap<>();
+        permitToEstablishmentId.put("111111", "casaDine");
+        permitToEstablishmentId.put("222222", "palmerasHotel");
+        permitToEstablishmentId.put("333333", "casaHotel");
+        permitToEstablishmentId.put("444444", "palmerasDine");
+        permitToEstablishmentId.put("555555", "sulyapDine");
+        permitToEstablishmentId.put("666666", "tahananMedingHotel");
+
+        // Check if the business permit is in the map
+        String establishmentID = permitToEstablishmentId.get(businessPermit);
+        if (establishmentID == null) {
+            editTextBusinessPermit.setError("Invalid code");
+            editTextBusinessPermit.requestFocus();
+            return;
+        }
+
         // Check if the EditText fields are not empty
-        if (TextUtils.isEmpty(businessName) || TextUtils.isEmpty(businessPermit) || TextUtils.isEmpty(businessEmail) || TextUtils.isEmpty(businessType) || TextUtils.isEmpty(businessAddress)) {
-            Toast.makeText(RegistrationCreateAccountActivity.this, "Please fill out all fields.", Toast.LENGTH_SHORT).show();
+        if (TextUtils.isEmpty(businessName)) {
+            editTextBusinessName.setError("Please fill out this field.");
+            editTextBusinessName.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(businessPermit)) {
+            editTextBusinessPermit.setError("Please fill out this field.");
+            editTextBusinessPermit.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(businessEmail)) {
+            editTextBusinessEmail.setError("Please fill out this field.");
+            editTextBusinessEmail.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(businessType)) {
+            editTextTypeOfBusiness.setError("Please fill out this field.");
+            editTextTypeOfBusiness.requestFocus();
+            return;
+        }
+
+        if (TextUtils.isEmpty(businessAddress)) {
+            editTextBusinessAddress.setError("Please fill out this field.");
+            editTextBusinessAddress.requestFocus();
             return;
         }
 
@@ -174,9 +200,11 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
                         updates.put("businessType", businessType);
                         updates.put("businessAddress", businessAddress);
                         updates.put("password", password);
+                        updates.put("establishmentID", establishmentID);
 
-                        db.collection("Establishments").document(userId)
-                                .update(updates)
+                        // Store the user's details in the 'usersEstablishment' collection
+                        db.collection("usersEstablishment").document(userId)
+                                .set(updates)
                                 .addOnSuccessListener(aVoid -> {
                                     Toast.makeText(RegistrationCreateAccountActivity.this, "Account Created", Toast.LENGTH_SHORT).show();
                                     Log.d(TAG, "DocumentSnapshot added with ID: " + userId);

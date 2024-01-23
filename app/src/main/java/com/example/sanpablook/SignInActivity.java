@@ -37,15 +37,21 @@ public class SignInActivity extends AppCompatActivity {
         businesseEmail = findViewById(R.id.editTextBusinessEmail);
         businessPassword = findViewById(R.id.editTextPassword);
 
+        if (mAuth.getCurrentUser() != null) {
+            redirectToMain();
+            return;
+        }
+
         //BUTTON Log In/Sign In Account
         signIn = findViewById(R.id.loginBtn);
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignInActivity.this, BottomNavBarActivity.class);
-                startActivity(intent);
+                signIn();
             }
         });
+
+
 
      // Don't have an account? Register now (text)
         redirectSignUp = findViewById(R.id.textRedirectRegisterNow);
@@ -53,7 +59,7 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Shift to another activity here
-                Intent signUpIntent = new Intent(SignInActivity.this, SignUpActivity.class);
+                Intent signUpIntent = new Intent(SignInActivity.this, RegistrationCreateAccountActivity.class);
                 startActivity(signUpIntent);
             }
         });
@@ -71,12 +77,20 @@ public class SignInActivity extends AppCompatActivity {
 
 
     }
-    private void login() {
-        String email = String.valueOf(businesseEmail.getText());
-        String password = String.valueOf(businessPassword.getText());
 
-        if (email.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Email and Password are required", Toast.LENGTH_SHORT).show();
+    private void signIn() {
+        String email = businesseEmail.getText().toString().trim();
+        String password = businessPassword.getText().toString().trim();
+
+        if (email.isEmpty()) {
+            businesseEmail.setError("Email is required");
+            businesseEmail.requestFocus();
+            return;
+        }
+
+        if (password.isEmpty()) {
+            businessPassword.setError("Password is required");
+            businessPassword.requestFocus();
             return;
         }
 

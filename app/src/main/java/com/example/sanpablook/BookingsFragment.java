@@ -1,5 +1,7 @@
 package com.example.sanpablook;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +19,11 @@ import android.widget.Toast;
 
 import com.example.sanpablook.Adapter.RecyclerFragmentBookings;
 import com.example.sanpablook_establishment.R;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -32,6 +39,7 @@ public class BookingsFragment extends Fragment {
 
     RecyclerView recyclerViewFragmentBookings;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+    String establishmentID;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,6 +51,27 @@ public class BookingsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_bookings, container, false);
 
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String userId = user.getUid();
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("usersEstablishment").document(userId)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document.exists()) {
+                                establishmentID = document.getString("establishmentID");
+                            } else {
+                                Log.d(TAG, "No such document");
+                            }
+                        } else {
+                            Log.d(TAG, "get failed with ", task.getException());
+                        }
+                    }
+                });
         //RECYCLER VIEW
         recyclerViewFragmentBookings = view.findViewById(R.id.recyclerViewFragmentBookings);
         recyclerViewFragmentBookings.setLayoutManager(new LinearLayoutManager(requireContext()));
@@ -50,7 +79,7 @@ public class BookingsFragment extends Fragment {
 
         // Query Firestore
         db.collection("BookingPending")
-                .whereEqualTo("establishmentID", "casaDine")
+                .whereEqualTo("establishmentID", establishmentID)
                 .get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {

@@ -110,7 +110,8 @@ public class RecyclerPending extends RecyclerView.Adapter<RecyclerPending.Bookin
                     buttonConfirm.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(view.getContext(), "You confirmed this booking", Toast.LENGTH_SHORT).show();
+                            acceptBooking(view);
+                            Toast makeText = Toast.makeText(view.getContext(), "You accepted this booking", Toast.LENGTH_SHORT);
                         }
                     });
 
@@ -190,6 +191,7 @@ public class RecyclerPending extends RecyclerView.Adapter<RecyclerPending.Bookin
                     buttonDecline.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            declineBooking(view);
                             Toast.makeText(view.getContext(), "You declined this booking", Toast.LENGTH_SHORT).show();
                         }
                     });

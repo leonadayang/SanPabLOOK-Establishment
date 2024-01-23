@@ -233,6 +233,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/textLabelConfirmedBookings"
+                        android:layout_marginTop="2dp"
                         android:fontFamily="@font/poppins_bold"
                         android:letterSpacing="0.05"
                         android:padding="10dp"
