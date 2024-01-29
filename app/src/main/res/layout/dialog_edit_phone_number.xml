@@ -34,7 +34,7 @@
             android:fontFamily="@font/poppins_light"
             android:inputType="phone|number"
             android:paddingTop="20dp"
-            android:text="@string/establishmentPhoneNumber"
+            android:hint="Enter your new phone number"
             android:textColor="@color/lighterBlack"
             android:textSize="15sp" />
 

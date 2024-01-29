@@ -1,97 +1,141 @@
 
-=
-java:S1604B"(Make this anonymous inner class a lambda(°æ
-C
-java:S1604H"(Make this anonymous inner class a lambda(ˆ’…Œÿÿÿÿÿ
->
-java:S1604N"(Make this anonymous inner class a lambda(ù÷ü¥
-=
-java:S1604T"(Make this anonymous inner class a lambda(Ûù°[
->
-java:S1604Z"(Make this anonymous inner class a lambda(µŠûã
-C
-java:S1604`"(Make this anonymous inner class a lambda(ãî—øúÿÿÿÿ
-C
-java:S1604f"(Make this anonymous inner class a lambda(¤Í¾Ùÿÿÿÿÿ
-C
-java:S1604l"(Make this anonymous inner class a lambda(ÖÿÄ­şÿÿÿÿ
-?
-java:S1604¾"(Make this anonymous inner class a lambda(¡‡·¬
->
-java:S1604Å"(Make this anonymous inner class a lambda(µ¶é)
-F
-java:S1604ò"(Make this anonymous inner class a lambda(¡‡·¬8†–—„Ó1
-E
-java:S1604ù"(Make this anonymous inner class a lambda(µ¶é)8‡–—„Ó1
-F
-java:S1604›"(Make this anonymous inner class a lambda(¡‡·¬8‡–—„Ó1
-E
-java:S1604¢"(Make this anonymous inner class a lambda(µ¶é)8‡–—„Ó1
-F
-java:S1604ä"(Make this anonymous inner class a lambda(¡‡·¬8‡–—„Ó1
-E
-java:S1604ë"(Make this anonymous inner class a lambda(µ¶é)8ˆ–—„Ó1
-F
-java:S1604œ"(Make this anonymous inner class a lambda(¡‡·¬8ˆ–—„Ó1
-E
-java:S1604£"(Make this anonymous inner class a lambda(µ¶é)8ˆ–—„Ó1
-F
-java:S1604Ï"(Make this anonymous inner class a lambda(¡‡·¬8‰–—„Ó1
-E
-java:S1604Ö"(Make this anonymous inner class a lambda(µ¶é)8‰–—„Ó1
-K
-java:S1604†"(Make this anonymous inner class a lambda(¶àË²úÿÿÿÿ8Š–—„Ó1
-E
-java:S1604"(Make this anonymous inner class a lambda(µ¶é)8Š–—„Ó1
-^
-java:S2259–"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ
-^
-java:S2259™"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ
-^
-java:S2259“"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ
-c
-java:S1659#"HDeclare "txtPassword" and all following declarations on a separate line.(‚ø‡òıÿÿÿÿ
-L
-java:S1659$"1Declare "buttonDeleteAccount" on a separate line.(Ö¶˜âûÿÿÿÿ
-l
-java:S1659'"VDeclare "fabEditHostProfilePicture" and all following declarations on a separate line.(£¸„œ
+u
+java:S1192Ä"XDefine a constant instead of duplicating this literal "Error updating document" 3 times.(Şİ‰S8öêÊ²Õ1
+r
+java:S1192n"VDefine a constant instead of duplicating this literal "estabProfilePictures/" 3 times.(Œˆ»V8÷êÊ²Õ1
+p
+java:S1192l"SDefine a constant instead of duplicating this literal "usersEstablishment" 4 times.(Ã©Ïô8ñª¿²Õ1
+i
+java:S1192Ú"KDefine a constant instead of duplicating this literal "No Bio yet" 3 times.(É™ì‚8÷êÊ²Õ1
 n
-java:S1659("SDeclare "editHostProfilePicture" and all following declarations on a separate line.(è«òøÿÿÿÿ
-B
-java:S1602t",Remove useless curly braces around statement(«İ’È
-G
-java:S1602{",Remove useless curly braces around statement(±ñ¯ıÿÿÿÿ
-C
-java:S1602‚",Remove useless curly braces around statement(·¥Â¥
+java:S1192x"QDefine a constant instead of duplicating this literal "No such document" 4 times.(Ñ…¨¢8øêÊ²Õ1
+z
+java:S1192î"WDefine a constant instead of duplicating this literal "Failed to upload image" 3 times.(®øô¿üÿÿÿÿ8øêÊ²Õ1
+{
+java:S1192ã"XDefine a constant instead of duplicating this literal "ProfileSettingsActivity" 3 times.(ç¾ªœûÿÿÿÿ8øêÊ²Õ1
+s
+java:S1192"UDefine a constant instead of duplicating this literal "Failed to load image" 3 times.(ÓšøÉ8øêÊ²Õ1
+s
+java:S1192»"UDefine a constant instead of duplicating this literal "Field can't be empty" 3 times.(€Ûá8øêÊ²Õ1
+n
+java:S1192{"QDefine a constant instead of duplicating this literal "get failed with " 4 times.(Ö‹›§8ùêÊ²Õ1
+o
+java:S1192ñ"QDefine a constant instead of duplicating this literal "No Host Name yet" 3 times.(ã‡ÉÉ8ùêÊ²Õ1
+r
+java:S1192ç"ODefine a constant instead of duplicating this literal "Image uploaded" 3 times.(ÏĞì¶ûÿÿÿÿ8ùêÊ²Õ1
+r
+java:S1192Ã"TDefine a constant instead of duplicating this literal "No Phone Number yet" 3 times.(•Ëû8ùêÊ²Õ1
+K
+java:S1604ƒ"(Make this anonymous inner class a lambda(æŒİ—ùÿÿÿÿ8ûêÊ²Õ1
+K
+java:S1604Š"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8üêÊ²Õ1
+K
+java:S1604—"(Make this anonymous inner class a lambda(«õ¿„şÿÿÿÿ8üêÊ²Õ1
+K
+java:S1604"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8üêÊ²Õ1
+F
+java:S1604ª"(Make this anonymous inner class a lambda(‹¡™ 8üêÊ²Õ1
+K
+java:S1604±"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ıêÊ²Õ1
+K
+java:S1604ı"(Make this anonymous inner class a lambda(Õƒ‹Òÿÿÿÿÿ8ıêÊ²Õ1
+E
+java:S1604Œ"(Make this anonymous inner class a lambda(°æ8ıêÊ²Õ1
+F
+java:S1604’"(Make this anonymous inner class a lambda(ù÷ü¥8ıêÊ²Õ1
+E
+java:S1604˜"(Make this anonymous inner class a lambda(Ûù°[8şêÊ²Õ1
+F
+java:S1604"(Make this anonymous inner class a lambda(µŠûã8şêÊ²Õ1
+K
+java:S1604¤"(Make this anonymous inner class a lambda(ãî—øúÿÿÿÿ8şêÊ²Õ1
+F
+java:S1604µ"(Make this anonymous inner class a lambda(¡‡·¬8şêÊ²Õ1
+E
+java:S1604É"(Make this anonymous inner class a lambda(µ¶é)8şêÊ²Õ1
+F
+java:S1604œ"(Make this anonymous inner class a lambda(¡‡·¬8ÿêÊ²Õ1
+E
+java:S1604£"(Make this anonymous inner class a lambda(µ¶é)8ÿêÊ²Õ1
+F
+java:S1604å"(Make this anonymous inner class a lambda(¡‡·¬8ÿêÊ²Õ1
+E
+java:S1604ú"(Make this anonymous inner class a lambda(µ¶é)8ÿêÊ²Õ1
+F
+java:S1604«"(Make this anonymous inner class a lambda(¡‡·¬8€ëÊ²Õ1
+E
+java:S1604À"(Make this anonymous inner class a lambda(µ¶é)8€ëÊ²Õ1
+K
+java:S1604ğ"(Make this anonymous inner class a lambda(¶àË²úÿÿÿÿ8€ëÊ²Õ1
+E
+java:S1604÷"(Make this anonymous inner class a lambda(µ¶é)8€ëÊ²Õ1
+e
+java:S2259Ö"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÆëÊ²Õ1
+e
+java:S2259Ñ"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÆëÊ²Õ1
+e
+java:S2259Ë"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÅëÊ²Õ1
 `
-java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾
-B
-java:S1172Ÿ"+Remove this unused method parameter "view".(­Üç°
-R
-java:S1117¤"<Rename "btnSave" which hides the field declared at line 266.(ÕÈÙ^
-I
-java:S1172Ó"+Remove this unused method parameter "view".(ÚÆ–ª8¦˜—„Ó1
-Y
-java:S1117Ø"<Rename "btnSave" which hides the field declared at line 266.(ÕÈÙ^8§˜—„Ó1
-I
-java:S1172Œ"+Remove this unused method parameter "view".(¹ë…Û8¼˜—„Ó1
+java:S16598"CDeclare "txtBio" and all following declarations on a separate line.(ı¡ñ†8Õ«¿²Õ1
+s
+java:S1659<"VDeclare "fabEditHostProfilePicture" and all following declarations on a separate line.(£¸„œ8Õ«¿²Õ1
+u
+java:S1659="SDeclare "editHostProfilePicture" and all following declarations on a separate line.(è«òøÿÿÿÿ8Õ«¿²Õ1
+J
+java:S1659?"-Declare "valueOfHostName" on a separate line.(Ÿ¥â8Õ«¿²Õ1
+t
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 46 to the 15 allowed.(¨Œşÿÿÿÿ8ß«¿²Õ1
+]
+java:S1854n"ARemove this useless assignment to local variable "profilePicRef".(Œˆ»V8ÙëÊ²Õ1
+W
+java:S1117k";Rename "storage" which hides the field declared at line 66.(ÌÔ©8â«¿²Õ1
 N
-java:S1172Æ"+Remove this unused method parameter "view".(û¾ŸÈûÿÿÿÿ8ä˜—„Ó1
+java:S1481n"2Remove this unused "profilePicRef" local variable.(Œˆ»V8ßëÊ²Õ1
+J
+java:S1602¬",Remove useless curly braces around statement(«İ’È8÷ëÊ²Õ1
+O
+java:S1602³",Remove useless curly braces around statement(±ñ¯ıÿÿÿÿ8úëÊ²Õ1
+J
+java:S1602º",Remove useless curly braces around statement(·¥Â¥8ûëÊ²Õ1
+g
+java:S1874Å"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾8üëÊ²Õ1
+O
+java:S1602ì",Remove useless curly braces around statement(ÕÊ¾øÿÿÿÿ8ÿëÊ²Õ1
+O
+java:S1602ÿ",Remove useless curly braces around statement(ÕÊ¾øÿÿÿÿ8€ìÊ²Õ1
+O
+java:S1602‘",Remove useless curly braces around statement(ÕÊ¾øÿÿÿÿ8‚ìÊ²Õ1
+I
+java:S1172—"+Remove this unused method parameter "view".(ÚÆ–ª8ƒìÊ²Õ1
+]
+java:S1117˜":Rename "dialog" which hides the field declared at line 54.(å”ù¤ıÿÿÿÿ8ƒìÊ²Õ1
 Y
-java:S1117Ë"<Rename "btnSave" which hides the field declared at line 266.(ÕÈÙ^8å˜—„Ó1
+java:S1117œ"<Rename "btnSave" which hides the field declared at line 521.(ÕÈÙ^8†ìÊ²Õ1
+V
+java:S1117Û"8Rename "user" which hides the field declared at line 70.(—ÓÛ8ìÊ²Õ1
+I
+java:S1172‹"+Remove this unused method parameter "view".(¹ë…Û8“ìÊ²Õ1
 N
-java:S1172ù"+Remove this unused method parameter "view".(Ÿ§§¶úÿÿÿÿ8û˜—„Ó1
+java:S1172Ç"+Remove this unused method parameter "view".(û¾ŸÈûÿÿÿÿ8›ìÊ²Õ1
+]
+java:S1117È":Rename "dialog" which hides the field declared at line 54.(å”ù¤ıÿÿÿÿ8›ìÊ²Õ1
+Y
+java:S1117Ì"<Rename "btnSave" which hides the field declared at line 521.(ÕÈÙ^8œìÊ²Õ1
+N
+java:S1172ˆ"+Remove this unused method parameter "view".(Ÿ§§¶úÿÿÿÿ8£ìÊ²Õ1
+]
+java:S1117‰":Rename "dialog" which hides the field declared at line 54.(å”ù¤ıÿÿÿÿ8£ìÊ²Õ1
 _
-java:S1117ş"<Rename "btnSave" which hides the field declared at line 266.(Éó‹Òûÿÿÿÿ8ü˜—„Ó1
-H
-java:S1172±"+Remove this unused method parameter "view".(¡ØÉ98•™—„Ó1
-Y
-java:S1117¶"<Rename "btnSave" which hides the field declared at line 266.(ÕÈÙ^8—™—„Ó1
+java:S1117"<Rename "btnSave" which hides the field declared at line 521.(Éó‹Òûÿÿÿÿ8¤ìÊ²Õ1
 N
-java:S1172ä"+Remove this unused method parameter "view".(¹­È³ıÿÿÿÿ8ª™—„Ó1
-Q
-java:S6397"5Replace this character class by the character itself.(õ†¿Ïøÿÿÿÿ
-Q
-java:S6397"5Replace this character class by the character itself.(õ†¿Ïøÿÿÿÿ
+java:S1172Î"+Remove this unused method parameter "view".(¹­È³ıÿÿÿÿ8¯ìÊ²Õ1
+]
+java:S1117Ï":Rename "dialog" which hides the field declared at line 54.(å”ù¤ıÿÿÿÿ8°ìÊ²Õ1
 X
-java:S6353"<Use concise character class syntax '\\d' instead of '[0-9]'.(õ†¿Ïøÿÿÿÿ
+java:S6397‡"5Replace this character class by the character itself.(õ†¿Ïøÿÿÿÿ8¶ìÊ²Õ1
+X
+java:S6397‡"5Replace this character class by the character itself.(õ†¿Ïøÿÿÿÿ8¶ìÊ²Õ1
+_
+java:S6353‡"<Use concise character class syntax '\\d' instead of '[0-9]'.(õ†¿Ïøÿÿÿÿ8·ìÊ²Õ1
+_
+java:S1144Î"<Remove this unused private "showDialogDeleteAccount" method.(¹­È³ıÿÿÿÿ8¸ìÊ²Õ1

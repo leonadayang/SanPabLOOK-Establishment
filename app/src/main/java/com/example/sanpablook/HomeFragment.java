@@ -33,6 +33,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -71,6 +72,7 @@ public class HomeFragment extends Fragment {
         // Firebase Auth
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
+        
 
 
         checkUserStatus();
@@ -82,6 +84,12 @@ public class HomeFragment extends Fragment {
         oneWeekAgo.add(Calendar.WEEK_OF_YEAR, -1);
         Calendar oneWeekAhead = Calendar.getInstance();
         oneWeekAhead.add(Calendar.WEEK_OF_YEAR, 1);
+
+        //sdf
+        SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd yyyy", Locale.getDefault());
+        todayDate = sdf.format(calendar.getTime());
+        oneWeekAgoDate = sdf.format(oneWeekAgo.getTime());
+        oneWeekAheadDate = sdf.format(oneWeekAhead.getTime());
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();
@@ -109,11 +117,7 @@ public class HomeFragment extends Fragment {
                         }
                     }
                 });
-        //sdf
-        SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd yyyy", Locale.getDefault());
-        String todayDate = sdf.format(calendar.getTime());
-        String oneWeekAgoDate = sdf.format(oneWeekAgo.getTime());
-        String oneWeekAheadDate = sdf.format(oneWeekAhead.getTime());
+
 
 
 
@@ -247,6 +251,70 @@ public class HomeFragment extends Fragment {
 
                         // Set the adapter to the RecyclerView
                         recyclerViewConfirmed.setAdapter(adapter);
+                    } else {
+                        Log.d("HomeFragment", "Error getting documents: ", task.getException());
+                    }
+                });
+
+        // Query for bookings from one week ago or earlier
+        db.collection("BookingPending")
+                .whereEqualTo("status", "Pending")
+                .whereEqualTo("establishmentID", establishmentID)
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        List<Map<String, Object>> bookings = new ArrayList<>();
+                        SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd yyyy", Locale.getDefault());
+                        Date oneWeekAgo;
+                        Date bookingDate;
+                        try {
+                            oneWeekAgo = sdf.parse(oneWeekAgoDate);
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                bookingDate = sdf.parse((String) document.get("date"));
+                                if (bookingDate != null && !bookingDate.after(oneWeekAgo)) {
+                                    bookings.add(document.getData());
+                                }
+                            }
+                            // Initialize the adapter
+                            RecyclerPastWeek adapter = new RecyclerPastWeek(bookings);
+
+                            // Set the adapter to the RecyclerView
+                            recyclerViewPastWeek.setAdapter(adapter);
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                    } else {
+                        Log.d("HomeFragment", "Error getting documents: ", task.getException());
+                    }
+                });
+
+        // Query for bookings from one week ahead
+        db.collection("BookingPending")
+                .whereEqualTo("status", "Pending")
+                .whereEqualTo("establishmentID", establishmentID)
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        List<Map<String, Object>> bookings = new ArrayList<>();
+                        SimpleDateFormat sdf = new SimpleDateFormat("MMMM dd yyyy", Locale.getDefault());
+                        Date oneWeekAgo;
+                        Date bookingDate;
+                        try {
+                            oneWeekAgo = sdf.parse(oneWeekAheadDate);
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                bookingDate = sdf.parse((String) document.get("date"));
+                                if (bookingDate != null && !bookingDate.after(oneWeekAgo)) {
+                                    bookings.add(document.getData());
+                                }
+                            }
+                            // Initialize the adapter
+                            RecyclerNextWeek adapter = new RecyclerNextWeek(bookings);
+
+                            // Set the adapter to the RecyclerView
+                            recyclerViewNextWeek.setAdapter(adapter);
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         Log.d("HomeFragment", "Error getting documents: ", task.getException());
                     }

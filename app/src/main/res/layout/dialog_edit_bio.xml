@@ -41,7 +41,7 @@
                 android:maxLength="500"
                 android:maxLines="10"
                 android:paddingTop="20dp"
-                android:text="@string/establishmentBio"
+                android:hint="Enter your new Bio"
                 android:textColor="@color/lighterBlack"
                 android:textSize="15sp" />
 

@@ -31,8 +31,8 @@ public class RecyclerNextWeek extends RecyclerView.Adapter<RecyclerNextWeek.Book
     @Override
     public void onBindViewHolder(@NonNull BookingViewHolder holder, int position) {
         Map<String, Object> booking = bookings.get(position);
-        holder.txtNextWeekBookingNumber.setText(booking.get("place").toString());
-        holder.txtNextWeekCustomerName.setText(booking.get("bookingID").toString());
+        holder.txtNextWeekBookingNumber.setText(booking.get("bookingID").toString());
+        holder.txtNextWeekCustomerName.setText(booking.get("fullName").toString());
     }
 
     @Override

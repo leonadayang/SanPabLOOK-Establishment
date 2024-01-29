@@ -88,7 +88,6 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_light"
                     android:letterSpacing="0.05"
-                    android:text="@string/bookingDateMonthly"
                     android:textColor="@color/darkGray"
                     android:textSize="12sp" />
             </LinearLayout>

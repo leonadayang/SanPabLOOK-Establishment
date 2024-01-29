@@ -1,7 +1,9 @@
 
 D
-java:S1604<"(Make this anonymous inner class a lambda(¯ã‡8ÓÀš‡Ó1
+java:S1604F"(Make this anonymous inner class a lambda(¯ã‡8§ã“ŠÕ1
 E
-java:S1185-"(Remove this method to simply inherit it.(ßìê¯8¿¤ëâÒ1
+java:S11854"(Remove this method to simply inherit it.(ßìê¯8°Î‰Õ1
+t
+java:S37769"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ËÄ•åûÿÿÿÿ8Û¯ˆŠÕ1
 X
-java:S11179"6Rename "db" which hides the field declared at line 41.(ôï¼ÿúÿÿÿÿ8‹Áš‡Ó1
+java:S1117C"6Rename "db" which hides the field declared at line 47.(ôï¼ÿúÿÿÿÿ8˜ä“ŠÕ1
