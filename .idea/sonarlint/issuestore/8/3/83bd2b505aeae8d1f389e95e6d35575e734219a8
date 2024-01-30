@@ -72,9 +72,9 @@ java:S1604÷"(Make this anonymous inner class a lambda(µ¶é)8€ëÊ²Õ1
 e
 java:S2259Ö"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÆëÊ²Õ1
 e
-java:S2259Ñ"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÆëÊ²Õ1
-e
 java:S2259Ë"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÅëÊ²Õ1
+e
+java:S2259Ñ"BA "NullPointerException" could be thrown; "data" is nullable here.(Íƒ“Íüÿÿÿÿ8ÆëÊ²Õ1
 `
 java:S16598"CDeclare "txtBio" and all following declarations on a separate line.(ý¡ñ†8Õ«¿²Õ1
 s

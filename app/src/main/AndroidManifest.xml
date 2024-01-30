@@ -18,16 +18,32 @@
         android:theme="@style/Theme.SanPabLOOKEstablishment"
         tools:targetApi="31">
 
-        <activity android:name="com.example.sanpablook.ForgotPasswordActivity" />
-        <activity android:name="com.example.sanpablook.RegistrationProcessActivity"  />
-        <activity android:name="com.example.sanpablook.ConfirmRegistrationActivity" />
-        <activity android:name="com.example.sanpablook.ProfileSettingsActivity" />
-        <activity android:name="com.example.sanpablook.RegistrationCompleteActivity" />
-        <activity android:name="com.example.sanpablook.RegistrationCreateAccountActivity"/>
-        <activity android:name="com.example.sanpablook.EmailConfirmationSent" />
+        <activity
+            android:name="com.example.sanpablook.ForgotPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.sanpablook.RegistrationProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.sanpablook.ConfirmRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.sanpablook.ProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.sanpablook.RegistrationCompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.sanpablook.RegistrationCreateAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.sanpablook.EmailConfirmationSent"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.sanpablook.SignInActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
