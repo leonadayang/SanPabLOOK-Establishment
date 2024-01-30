@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ProfileSettingsActivity">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintSettingsNav"
@@ -132,57 +131,6 @@
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintUsername"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:id="@+id/labelOfEstablishmentName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/labelEstablishmentName"
-                    android:textColor="@color/lighterBlack"
-                    android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/valueOfEstablishmentName"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/poppins_light"
-                    android:maxLines="1"
-                    android:paddingBottom="15dp"
-                    android:text="@string/establishmentName"
-                    android:textColor="@color/darkGray"
-                    android:textSize="15sp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfEstablishmentName" />
-
-                <TextView
-                    android:id="@+id/editTheEstablishmentName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
-                    android:clickable="true"
-                    android:fontFamily="@font/poppins_light"
-                    android:gravity="end"
-                    android:padding="15dp"
-                    android:text="@string/labelEdit"
-                    android:textColor="@color/blueText"
-                    android:textSize="15sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/labelOfEstablishmentName" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -269,7 +217,7 @@
                     android:maxLines="2"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
-                    android:text="@string/establishmentBio"
+                    android:text="No bio yet"
                     android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -383,7 +331,7 @@
                     android:maxLines="1"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
-                    android:text="@string/establishmentPhoneNumber"
+                    android:text="No phone number yet"
                     android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -404,58 +352,6 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="@id/labelOfPhoneNumber" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:id="@+id/labelOfEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/labelEmail"
-                    android:textColor="@color/lighterBlack"
-                    android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/valueOfEmail"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/poppins_light"
-                    android:maxLines="1"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:text="@string/establishmentEmail"
-                    android:textColor="@color/darkGray"
-                    android:textSize="15sp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/labelOfEmail" />
-
-                <TextView
-                    android:id="@+id/editTheEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
-                    android:clickable="true"
-                    android:fontFamily="@font/poppins_light"
-                    android:gravity="end"
-                    android:padding="15dp"
-                    android:text="@string/labelEdit"
-                    android:textColor="@color/blueText"
-                    android:textSize="15sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/labelOfEmail" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
@@ -562,7 +458,7 @@
                     android:fontFamily="@font/poppins_light"
                     android:maxLines="1"
                     android:paddingBottom="15dp"
-                    android:text="@string/hostName"
+                    android:text="No host name yet"
                     android:textColor="@color/darkGray"
                     android:textSize="15sp"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -613,27 +509,6 @@
                     app:rippleColor="@color/darkerRed"
                     app:strokeColor="@color/darkerRed"
                     app:strokeWidth="1dp" />
-
-                <Button
-                    android:id="@+id/buttonDeleteAccount"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:backgroundTint="@color/darkerRed"
-                    android:fontFamily="@font/poppins_medium"
-                    android:letterSpacing="0"
-                    android:padding="10dp"
-                    android:text="@string/deleteAccount"
-                    android:textAllCaps="false"
-                    android:textColor="@color/light"
-                    android:textSize="18sp"
-                    app:cornerRadius="50dp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/buttonLogout"
-                    app:rippleColor="@color/light" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

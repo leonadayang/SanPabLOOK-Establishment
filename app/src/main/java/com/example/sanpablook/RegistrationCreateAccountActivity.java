@@ -201,6 +201,7 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
                         updates.put("businessAddress", businessAddress);
                         updates.put("password", password);
                         updates.put("establishmentID", establishmentID);
+                        updates.put("userID", userId);
 
                         // Store the user's details in the 'usersEstablishment' collection
                         db.collection("usersEstablishment").document(userId)
@@ -208,6 +209,11 @@ public class RegistrationCreateAccountActivity extends AppCompatActivity {
                                 .addOnSuccessListener(aVoid -> {
                                     Toast.makeText(RegistrationCreateAccountActivity.this, "Account Created", Toast.LENGTH_SHORT).show();
                                     Log.d(TAG, "DocumentSnapshot added with ID: " + userId);
+
+                                    // Start SignInActivity
+                                    Intent intent = new Intent(RegistrationCreateAccountActivity.this, SignInActivity.class);
+                                    startActivity(intent);
+                                    finish();
                                 })
                                 .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
                     } else {

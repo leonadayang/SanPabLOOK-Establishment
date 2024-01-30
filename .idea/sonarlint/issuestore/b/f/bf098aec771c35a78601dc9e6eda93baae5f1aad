@@ -1,50 +1,38 @@
 
 j
-java:S1192"MDefine a constant instead of duplicating this literal "HomeFragment" 5 times.(˜Ã’d8ò¾ÌÓ1
+java:S1192”"MDefine a constant instead of duplicating this literal "HomeFragment" 7 times.(˜Ã’d8ßÈŒˆÕ1
 x
-java:S1192§"ZDefine a constant instead of duplicating this literal "Error getting documents: " 3 times.(¥ˆÉ’8åÖÓ1
+java:S1192«"ZDefine a constant instead of duplicating this literal "Error getting documents: " 5 times.(¥ˆÉ’8âÈŒˆÕ1
 r
-java:S1192”"ODefine a constant instead of duplicating this literal "BookingPending" 3 times.(œÑşçÿÿÿÿÿ8æÖÓ1
+java:S1192˜"ODefine a constant instead of duplicating this literal "BookingPending" 5 times.(œÑşçÿÿÿÿÿ8âÈŒˆÕ1
 j
-java:S1192•"GDefine a constant instead of duplicating this literal "status" 3 times.(Ù­ÙÓüÿÿÿÿ8æÖÓ1
+java:S1192Y"MDefine a constant instead of duplicating this literal "MMMM dd yyyy" 4 times.(İÀ±8âÈŒˆÕ1
+k
+java:S1192™"HDefine a constant instead of duplicating this literal "Pending" 4 times.(Ù­ÙÓüÿÿÿÿ8ãÈŒˆÕ1
+j
+java:S1192™"GDefine a constant instead of duplicating this literal "status" 5 times.(Ù­ÙÓüÿÿÿÿ8ãÈŒˆÕ1
 m
-java:S1192b"PDefine a constant instead of duplicating this literal "establishmentID" 4 times.(´ÊÁÛ8ó¾ÌÓ1
+java:S1192j"PDefine a constant instead of duplicating this literal "establishmentID" 6 times.(´ÊÁÛ8ãÈŒˆÕ1
 D
-java:S1604\"(Make this anonymous inner class a lambda(¯ã‡8ó¾ÌÓ1
+java:S1604d"(Make this anonymous inner class a lambda(¯ã‡8åÈŒˆÕ1
 K
-java:S1604™"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8çÖÓ1
+java:S1604"(Make this anonymous inner class a lambda(¯‘àçúÿÿÿÿ8åÈŒˆÕ1
 K
-java:S1604‚"(Make this anonymous inner class a lambda(Á¤Ïşÿÿÿÿ8ô¾ÌÓ1
+java:S1604†"(Make this anonymous inner class a lambda(Á¤Ïşÿÿÿÿ8æÈŒˆÕ1
 m
-java:S16596"QDeclare "recyclerViewNextWeek" and all following declarations on a separate line.(Ã„ÏE8À¿ÌÓ1
+java:S16597"QDeclare "recyclerViewNextWeek" and all following declarations on a separate line.(Ã„ÏE8¾ÊŒˆÕ1
 h
-java:S16599"KDeclare "oneWeekAgoDate" and all following declarations on a separate line.(Ÿÿ†8À¿ÌÓ1
+java:S1659:"KDeclare "oneWeekAgoDate" and all following declarations on a separate line.(Ÿÿ†8¾ÊŒˆÕ1
 E
-java:S1185;"(Remove this method to simply inherit it.(ßìê¯8Ç¿ÌÓ1
-a
-java:S1854t"DRemove this useless assignment to local variable "oneWeekAheadDate".(‡»ÿ‚8Ì¿ÌÓ1
-_
-java:S1854s"BRemove this useless assignment to local variable "oneWeekAgoDate".(›šìú8Ì¿ÌÓ1
-_
-java:S1854r"=Remove this useless assignment to local variable "todayDate".(¢ÒŞ×ûÿÿÿÿ8Ì¿ÌÓ1
+java:S1185<"(Remove this method to simply inherit it.(ßìê¯8İÊŒˆÕ1
 U
-java:S1117V"8Rename "user" which hides the field declared at line 52.(—ÓÛ8Ğ¿ÌÓ1
+java:S1117^"8Rename "user" which hides the field declared at line 53.(—ÓÛ8íÊŒˆÕ1
 X
-java:S1117Y"6Rename "db" which hides the field declared at line 50.(ôï¼ÿúÿÿÿÿ8Ñ¿ÌÓ1
-_
-java:S1117r"=Rename "todayDate" which hides the field declared at line 57.(¢ÒŞ×ûÿÿÿÿ8×¿ÌÓ1
-P
-java:S1481r".Remove this unused "todayDate" local variable.(¢ÒŞ×ûÿÿÿÿ8×¿ÌÓ1
-_
-java:S1117s"BRename "oneWeekAgoDate" which hides the field declared at line 57.(›šìú8×¿ÌÓ1
-P
-java:S1481s"3Remove this unused "oneWeekAgoDate" local variable.(›šìú8Ø¿ÌÓ1
-a
-java:S1117t"DRename "oneWeekAheadDate" which hides the field declared at line 57.(‡»ÿ‚8Ù¿ÌÓ1
-R
-java:S1481t"5Remove this unused "oneWeekAheadDate" local variable.(‡»ÿ‚8Ù¿ÌÓ1
+java:S1117a"6Rename "db" which hides the field declared at line 51.(ôï¼ÿúÿÿÿÿ8îÊŒˆÕ1
 Y
-java:S1117“"6Rename "db" which hides the field declared at line 50.(ôï¼ÿúÿÿÿÿ8î¿ÌÓ1
-^	java:S125¯"<This block of commented-out lines of code should be removed.(Æ¶Şıÿÿÿÿ8æ¿ÌÓ1
+java:S1117—"6Rename "db" which hides the field declared at line 51.(ôï¼ÿúÿÿÿÿ8±ÌŒˆÕ1
+^	java:S125³"<This block of commented-out lines of code should be removed.(Æ¶Şıÿÿÿÿ8»ÌŒˆÕ1
+o
+java:S3776Ó"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(İÅÈk8öÌŒˆÕ1
 Y
-java:S1117Ò"6Rename "db" which hides the field declared at line 50.(ôï¼ÿúÿÿÿÿ8˜’ÖÓ1
+java:S1117Ö"6Rename "db" which hides the field declared at line 51.(ôï¼ÿúÿÿÿÿ8ıÍŒˆÕ1

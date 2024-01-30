@@ -1,7 +1,7 @@
 
 m
-java:S11925"PDefine a constant instead of duplicating this literal "establishmentID" 3 times.(´ÊÁÛ8ÎÃ¬Ó1
-s
-java:S1659"QDeclare "valuePendingBookings" and all following declarations on a separate line.(÷Üÿ£şÿÿÿÿ8ùÃ¬Ó1
+java:S11926"PDefine a constant instead of duplicating this literal "establishmentID" 3 times.(´ÊÁÛ8˜Ö‡Õ1
+n
+java:S1659"QDeclare "valuePendingBookings" and all following declarations on a separate line.(ùªÏ8Œ‘Ö‡Õ1
 H
-java:S1172U"+Remove this unused method parameter "view".(®ú…ò8—Ä¬Ó1
+java:S1172V"+Remove this unused method parameter "view".(®ú…ò8Ä‘Ö‡Õ1

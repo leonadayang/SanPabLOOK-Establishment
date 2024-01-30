@@ -28,7 +28,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 public class ReportsFragment extends Fragment {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    TextView valueTotalBookings, valuePendingBookings, valueCancelledBookings, valueConfirmedBookings;
+    TextView valueTotalBookings, valuePendingBookings, valueCancelledBookings, valueConfirmedBookings, valueCompletedBookings;
     String establishmentID;
 
     @Override
@@ -40,6 +40,7 @@ public class ReportsFragment extends Fragment {
         valuePendingBookings = view.findViewById(R.id.valuePendingBookings);
         valueCancelledBookings = view.findViewById(R.id.valueCancelledBookings);
         valueConfirmedBookings = view.findViewById(R.id.valueConfirmedBookings);
+        valueCompletedBookings = view.findViewById(R.id.valueCompletedBookings);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();
@@ -83,11 +84,12 @@ public class ReportsFragment extends Fragment {
     }
 
     private void fetchAndDisplayBookings(View view) {
-        String[] statuses = {"Pending", "Cancelled", "Confirmed"};
+        String[] statuses = {"Pending", "Cancelled", "Confirmed", "Completed"};
         TextView[] textViews = {
                 valuePendingBookings,
                 valueCancelledBookings,
-                valueConfirmedBookings
+                valueConfirmedBookings,
+                valueCompletedBookings
         };
 
         for (int i = 0; i < statuses.length; i++) {

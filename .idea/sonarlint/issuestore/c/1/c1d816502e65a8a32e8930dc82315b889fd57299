@@ -1,7 +1,35 @@
 
->
-java:S1604!"(Make this anonymous inner class a lambda(Ø¯Ã®
->
-java:S1185"(Remove this method to simply inherit it.(ßìê¯
-A
-java:S1172+"+Remove this unused method parameter "view".(‘ğê
+i
+java:S1192’"KDefine a constant instead of duplicating this literal "No Bio yet" 3 times.(É™ì‚8Áìä²Õ1
+n
+java:S1192V"QDefine a constant instead of duplicating this literal "No such document" 4 times.(Ñ…¨¢8®Éù²Õ1
+s
+java:S1192¯"UDefine a constant instead of duplicating this literal "Failed to load image" 3 times.(‡“ÎØ8ÿÆŞ²Õ1
+w
+java:S1192f"ZDefine a constant instead of duplicating this literal "No Establishment Name yet" 3 times.(¤áºÂ8›Ú³Õ1
+n
+java:S1192Y"QDefine a constant instead of duplicating this literal "get failed with " 4 times.(Ö‹›§8¯Éù²Õ1
+s
+java:S1192{"QDefine a constant instead of duplicating this literal "No Host Name yet" 3 times.(´Û²€ûÿÿÿÿ8®Éù²Õ1
+K
+java:S1604¤"(Make this anonymous inner class a lambda(æŒİ—ùÿÿÿÿ8€ÇŞ²Õ1
+K
+java:S1604«"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ÇŞ²Õ1
+K
+java:S1604¸"(Make this anonymous inner class a lambda(«õ¿„şÿÿÿÿ8ÇŞ²Õ1
+K
+java:S1604¿"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ÇŞ²Õ1
+F
+java:S1604Ë"(Make this anonymous inner class a lambda(‹¡™ 8ÇŞ²Õ1
+K
+java:S1604Ò"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8ÇŞ²Õ1
+F
+java:S1604Ü"(Make this anonymous inner class a lambda(Ø¯Ã®8ÇŞ²Õ1
+p
+java:S1659/"SDeclare "imageviewFeaturedImage" and all following declarations on a separate line.(·ÇÍ‘8İÇŞ²Õ1
+E
+java:S11852"(Remove this method to simply inherit it.(ßìê¯8åÇŞ²Õ1
+t
+java:S37768"RRefactor this method to reduce its Cognitive Complexity from 46 to the 15 allowed.(ËÄ•åûÿÿÿÿ8úìä²Õ1
+I
+java:S1172æ"+Remove this unused method parameter "view".(‘ğê8‹ÈŞ²Õ1
