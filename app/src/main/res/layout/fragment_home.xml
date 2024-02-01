@@ -92,7 +92,7 @@
                     android:id="@+id/labelConfirmedBooking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="40dp"
                     android:fontFamily="@font/poppins_bold"
@@ -106,9 +106,9 @@
                     android:id="@+id/spacerConfirmed"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="3dp"
-                    android:layout_marginEnd="40dp"
+                    android:layout_marginEnd="25dp"
                     android:background="@color/skyBlue" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -134,9 +134,9 @@
                     android:id="@+id/labelNextWeekBooking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="40dp"
+                    android:layout_marginEnd="25dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="@string/nextWeek"
                     android:textColor="@color/blueText"
@@ -148,9 +148,9 @@
                     android:id="@+id/spacerNextWeek"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="3dp"
-                    android:layout_marginEnd="40dp"
+                    android:layout_marginEnd="25dp"
                     android:background="@color/skyBlue" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -176,9 +176,9 @@
                     android:id="@+id/labelPastWeekBooking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="40dp"
+                    android:layout_marginEnd="25dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="@string/pastWeek"
                     android:textColor="@color/blueText"
@@ -190,9 +190,9 @@
                     android:id="@+id/spacerPastWeek"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="25dp"
                     android:layout_marginTop="3dp"
-                    android:layout_marginEnd="40dp"
+                    android:layout_marginEnd="25dp"
                     android:background="@color/skyBlue" />
 
                 <androidx.recyclerview.widget.RecyclerView
